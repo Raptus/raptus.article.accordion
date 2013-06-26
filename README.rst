@@ -3,13 +3,13 @@
 Introduction
 ============
 
-raptus.article.accordeon provides an accordeon listing for Articles.
+raptus.article.accordion provides an accordion listing for Articles.
 
 The following features for raptus.article are provided by this package:
 
 Components
 ----------
-    * Accordeon
+    * Accordion
 
 Dependencies
 ------------
@@ -19,11 +19,11 @@ Dependencies
 Installation
 ============
 
-To install raptus.article.accordeon into your Plone instance, locate the file
+To install raptus.article.accordion into your Plone instance, locate the file
 buildout.cfg in the root of your Plone instance directory on the file system,
 and open it in a text editor.
 
-Add the actual raptus.article.accordeon add-on to the "eggs" section of
+Add the actual raptus.article.accordion add-on to the "eggs" section of
 buildout.cfg. Look for the section that looks like this::
 
     eggs =
@@ -34,7 +34,7 @@ installed. Just add the raptus.article.accordeon on a separate line, like this::
 
     eggs =
         Plone
-        raptus.article.accordeon
+        raptus.article.accordion
 
 Note that you have to run buildout like this::
 
@@ -44,7 +44,7 @@ Then go to the "Add-ons" control panel in Plone as an administrator, and
 install or reinstall the "raptus.article.default" product.
 
 Note that if you do not use the raptus.article.default package you have to
-include the zcml of raptus.article.accordeon either by adding it
+include the zcml of raptus.article.accordion either by adding it
 to the zcml list in your buildout or by including it in another package's
 configure.zcml.
 

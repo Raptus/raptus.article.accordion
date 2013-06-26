@@ -9,12 +9,12 @@ long_description = (
     'Contributors\n'
     '============\n'
     + '\n' +
-    open('CONTRIBUTORS.txt').read()
+    open('CONTRIBUTORS.txt').read() + "\n" +
     open("CHANGES.txt").read())
 
-setup(name='raptus.article.accordeon',
+setup(name='raptus.article.accordion',
       version=version,
-      description="Provides an article listing displayed as an accordeon",
+      description="Provides an article listing displayed as an accordion",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -24,7 +24,7 @@ setup(name='raptus.article.accordeon',
       keywords='',
       author='Raptus AG',
       author_email='dev@raptus.com',
-      url='http://svn.plone.org/svn/collective/',
+      url='http://github.com/Raptus/raptus.article.accordion',
       license='gpl',
       packages=find_packages('src'),
       package_dir = {'': 'src'},
@@ -35,6 +35,7 @@ setup(name='raptus.article.accordeon',
           'setuptools',
           'raptus.article.core',
           'raptus.article.nesting',
+          'raptus.article.listings>2.0b7',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

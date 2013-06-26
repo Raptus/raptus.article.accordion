@@ -13,4 +13,4 @@ Components
 
 plone.belowcontentbody
 ``````````````````````
-- raptus.article.accordeon
+- raptus.article.accordion
