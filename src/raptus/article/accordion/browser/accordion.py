@@ -1,4 +1,6 @@
 from zope import interface
+from zope.formlib.widget import renderElement
+from zope.i18n import translate
 
 from Products.CMFCore.utils import getToolByName
 
@@ -29,6 +31,17 @@ class Viewlet(listing.ViewletLeft):
     type = "accordion"
     thumb_size = None
     component = "accordion"
+
+    def _data(self, item, i, l):
+        super(Viewlet, self)._data(item, i, l)
+        if 'url' in item:
+            if not 'wysiwyg' in item:
+                item['wysiwyg'] = ''
+            item['url'] = None
+            item['wysiwyg'] += renderElement('p',
+                                             contents=renderElement('a',
+                                                                    cssClass='button read-more',
+                                                                    contents=translate(_(u'Read more'), context=self.request)))
 
     @property
     def cssClass(self):

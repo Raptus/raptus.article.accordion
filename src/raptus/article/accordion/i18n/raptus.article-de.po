@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: raptus.article.accordion\n"
-"POT-Creation-Date: 2013-06-26 07:50+0000\n"
+"POT-Creation-Date: 2013-06-27 06:54+0000\n"
 "PO-Revision-Date: 2013-06-26 07:50+0000\n"
 "Last-Translator: Simon Käser <skaeser@raptus.com>\n"
 "Language-Team: German <skaeser@raptus.com>\n"
@@ -16,11 +16,14 @@ msgstr ""
 "Domain: raptus.article\n"
 "X-Is-Fallback-For: de-at de-li de-lu de-ch de-de\n"
 
-#: ./browser/accordion.py:17
+#: browser/accordion.py:21
 msgid "Accordion"
 msgstr "Accordion"
 
-#: ./browser/accordion.py:18
+#: browser/accordion.py:22
 msgid "List of the contained articles in an accordion."
 msgstr "Liste der enthaltenen Artikel dargestellt in einem Akkordeon"
 
+#: browser/accordion.py:44
+msgid "Read more"
+msgstr "Mehr lesen"

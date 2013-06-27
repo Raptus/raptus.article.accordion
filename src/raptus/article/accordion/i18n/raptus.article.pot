@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-26 07:50+0000\n"
+"POT-Creation-Date: 2013-06-27 06:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: raptus.article\n"
 
-#: ./browser/accordion.py:17
+#: ./browser/accordion.py:21
 msgid "Accordion"
 msgstr ""
 
-#: ./browser/accordion.py:18
+#: ./browser/accordion.py:22
 msgid "List of the contained articles in an accordion."
+msgstr ""
+
+#: ./browser/accordion.py:44
+msgid "Read more"
 msgstr ""
 
