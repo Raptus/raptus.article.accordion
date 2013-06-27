@@ -8,6 +8,6 @@
               expression=""
               id="++resource++accordion.js"
               inline="False"
-              insert-after="jquery.js"/>
+              insert-after="jquery-integration.js"/>
 
 </object>
