@@ -29,8 +29,8 @@
     return this;
   }
 
-  $(document).ready(function(e) {
-    $('.accordion-listing').each(function() {
+  function init(e) {
+    $(this).find('.accordion-listing').each(function() {
       var container = $(this);
       container.find('> ul > li').each(function() {
         var item = $(this);
@@ -44,6 +44,11 @@
         trigger: '> h2'
       });
     });
+  }
+
+  $(document).ready(function(e) {
+    $.proxy(init, $('body'))(e);
+    $('.viewletmanager').on('viewlets.updated', init);
   });
 
 })(jQuery);
