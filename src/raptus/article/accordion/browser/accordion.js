@@ -48,7 +48,7 @@
 
   $(document).ready(function(e) {
     $.proxy(init, $('body'))(e);
-    $('.viewletmanager').on('viewlets.updated', init);
+    $('.viewletmanager').bind('viewlets.updated', init);
   });
 
 })(jQuery);

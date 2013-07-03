@@ -18,11 +18,11 @@ msgstr ""
 
 #: browser/accordion.py:21
 msgid "Accordion"
-msgstr "Accordion"
+msgstr "Akkordeon"
 
 #: browser/accordion.py:22
 msgid "List of the contained articles in an accordion."
-msgstr "Liste der enthaltenen Artikel dargestellt in einem Akkordeon"
+msgstr "Liste der enthaltenen Artikel dargestellt in einem Akkordeon."
 
 #: browser/accordion.py:44
 msgid "Read more"

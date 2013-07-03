@@ -34,14 +34,15 @@ class Viewlet(listing.ViewletLeft):
 
     def _data(self, item, i, l):
         super(Viewlet, self)._data(item, i, l)
-        if 'url' in item:
+        if 'url' in item and item['url']:
             if not 'wysiwyg' in item:
                 item['wysiwyg'] = ''
-            item['url'] = None
             item['wysiwyg'] += renderElement('p',
                                              contents=renderElement('a',
+                                                                    href=item['url'],
                                                                     cssClass='button read-more',
                                                                     contents=translate(_(u'Read more'), context=self.request)))
+            item['url'] = None
 
     @property
     def cssClass(self):
